@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique - Home</title>
+ <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="shortcut icon" href="image/Logo/favicon(white).png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Animated Cassette Tape -->
+  <div id="cassetteTape" class="cassette-tape">
+    <div class="tape-body">
+      <div class="reel"></div>
+      <div class="reel"></div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="image/Logo/favicon(white).png" alt="Logo" class="logo">
+        <span class="site-name">Bean Boutique</span>
+      </div>
+      
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="coffeeselection.html">Coffee Selection</a>
+          <ul>
+            <li><a href="frenchpress.html">French Press</a></li>
+            <li><a href="Latte.html">Latte</a></li>
+            <li><a href="Americano.html">Americano</a></li>
+          </ul>
+        </li>
+        <li><a href="brewing.html">Brewing Equipment</a></li>
+        <li><a href="events.html">Events & Workshops</a></li>
+        <li><a href="cart.html">Shopping Cart <span class="cart-count">0</span></a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header with Slideshow -->
+  <header>
+    <div class="slideshow">
+      <img src="image/coffeephotolandscape/coffeebackground.jpg" alt="Coffee Beans" class="active">
+      <img src="image/coffeephotolandscape/coffeebrewingequipment.jpg" alt="Brewing Equipment">
+      <img src="image/coffeephotolandscape/peopleenjoyingcoffee.jpg" alt="People Enjoying Coffee">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="welcome" style="text-align: center; margin-top: 20px;">
+      <audio id="myAudio">
+        <source src="audio/JazzloopmusicMilkCoffee.mp3" type="audio/mpeg">
+      </audio>
+      <button id="musicToggle" class="music-btn">▶ Play Music</button>
+      
+      <h1 style="font-size: 2.5rem;">Welcome to Bean Boutique</h1>
+      <p style="font-size: 1.2rem; color: #666;">Discover the finest coffee blends and brewing equipment.</p>
+    </section>
+
+    <!-- Feature Cards Grid -->
+    <div class="features-grid">
+      <div class="feature-card">
+        <h2>Coffee Selection</h2>
+        <p>Here are three types of coffee available: French Press, Latte, and Americano.</p>
+        <a href="coffeeselection.html" class="view-cart">Explore</a>
+      </div>
+      <div class="feature-card">
+        <h2>Brewing</h2>
+        <p>There are nine types of brewing equipment, essential tools used in a coffee shop.</p>
+        <a href="brewing.html" class="view-cart">Explore</a>
+      </div>
+      <div class="feature-card">
+        <h2>Events & Workshops</h2>
+        <p>This platform not only showcases past events but allows users to easily register for upcoming ones.</p>
+        <a href="events.html" class="view-cart">Explore</a>
+      </div>
+      <div class="feature-card">
+        <h2>Special Offers</h2>
+        <p>Access weekly special offers and discounts just for you.</p>
+        <a href="offers.html" class="view-cart">Explore</a>
+      </div>
+    </div>
+
+    <!-- Customer Feedbacks Widget -->
+    <section class="widget" style="margin-top: 50px; background: #fff; padding: 30px; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid #f0f0f0;">
+      <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 30px;">Customer Feedbacks</h2>
+      <div class="cust_container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        <div class="gitem" style="background: var(--bg-color); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid var(--secondary-color);">
+          <img src="image/rating/5stars.jpg" alt="5stars" style="width: 100px; border-radius: 5px; margin-bottom: 10px;">
+          <p style="color: #666; font-style: italic;">"Tasting is so good and highly recommended."</p>
+        </div>
+        <div class="gitem" style="background: var(--bg-color); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid var(--secondary-color);">
+          <img src="image/rating/4stars.jpg" alt="4stars" style="width: 100px; border-radius: 5px; margin-bottom: 10px;">
+          <p style="color: #666; font-style: italic;">"Almost perfect."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Map Widget -->
+    <section class="widget" style="margin-top: 40px; background: #fff; padding: 30px; border-radius: 16px; box-shadow: var(--card-shadow); border: 1px solid #f0f0f0;">
+      <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;">Visit Us</h2>
+      <div class="map" style="border-radius: 12px; overflow: hidden; border: 2px solid var(--secondary-color);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8a32f7f8c8!2sBean%20Boutique!5e0!3m2!1sen!2sus!4v1622549400000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal Popup for Email Signup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 style="color: var(--primary-color); margin-top: 10px; font-size: 1.8rem;">Welcome!</h2>
+      <p style="color: #666; margin-bottom: 25px; font-size: 0.95rem;">Get 10% off your first purchase when you sign up for our newsletter.</p>
+      
+      <form onsubmit="event.preventDefault(); alert('Subscribed successfully!'); document.getElementById('modal').style.display='none';">
+        <input type="email" placeholder="Enter your email" required class="modal-input">
+        <button type="submit" class="view-cart" style="width: 100%; border-radius: 30px;">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

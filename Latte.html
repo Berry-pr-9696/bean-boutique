@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean Boutique - Latte</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link
+      rel="shortcut icon"
+      href="image/Logo/favicon(white).png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-container">
+          <img src="image/Logo/favicon(white).png" alt="Logo" class="logo" />
+          <span class="site-name">Bean Boutique</span>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="coffeeselection.html">Coffee Selection</a>
+            <ul>
+              <li><a href="frenchpress.html">☕ French Press</a></li>
+              <li><a href="Latte.html">☕ Latte</a></li>
+              <li><a href="Americano.html">☕ Americano</a></li>
+            </ul>
+          </li>
+          <li><a href="brewing.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li>
+            <a href="cart.html"
+              >Shopping Cart <span class="cart-count">0</span></a
+            >
+          </li>
+          <li><a href="offers.html">Special Offers</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Latte Selection</h1>
+      <div class="coffee-list">
+        <div class="coffee-item">
+          <img src="image/Latte/ClassicLatte.jpg" alt="Classic Latte" />
+          <h2>Classic Latte</h2>
+          <p>Tasting Notes: Smooth, creamy, mild espresso flavor</p>
+          <p>
+            How to make: 1 shot espresso + steamed milk (150–240ml) + light milk
+            foam.
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="Classic Latte"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img src="image/Latte/Iced-latte.jpg" alt="Iced Latte" />
+          <h2>Iced Latte</h2>
+          <p>Tasting Notes: Refreshing, creamy, chilled</p>
+          <p>How to make: Espresso poured over ice + cold milk.</p>
+          <p>$4.50</p>
+          <button class="add-to-cart" data-name="Iced Latte" data-price="4.50">
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img src="image/Latte/Vanilla-Latte.jpg" alt="Vanilla Latte" />
+          <h2>Vanilla Latte</h2>
+          <p>Tasting Notes: Sweet, aromatic, creamy</p>
+          <p>How to make: Latte + 1–2 pumps vanilla syrup.</p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="Vanilla Latte"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img src="image/Latte/Macha-Latte.jpg" alt="Macha Latte" />
+          <h2>Macha Latte</h2>
+          <p>Tasting Notes: Earthy, grassy, slightly sweet</p>
+          <p>How to make: Matcha powder + hot milk (no espresso).</p>
+          <p>$4.50</p>
+          <button class="add-to-cart" data-name="Macha Latte" data-price="4.50">
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img src="image/Latte/Hazelut-Latte.jpg" alt="Hazelnut Latte" />
+          <h2>Hazelnut Latte</h2>
+          <p>Tasting Notes: Nutty, smooth, sweet</p>
+          <p>How to make: Latte + hazelnut syrup.</p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="Hazelnut Latte"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img src="image/Latte/Caramel-coffee.jpg" alt="Caramel Latte" />
+          <h2>Caramel Latte</h2>
+          <p>Tasting Notes: Sweet, buttery, rich</p>
+          <p>How to make: Latte + caramel syrup or drizzle.</p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="Caramel Latte"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <a href="cart.html" class="view-cart">View Cart</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+    </footer>
+    <div class="gradient-circle-background"></div>
+    <script src="cart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique - Americano</title>
+<link rel="stylesheet" href="styles.css?v=2">
+  <link rel="shortcut icon" href="image/Logo/favicon(white).png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="image/Logo/favicon(white).png" alt="Logo" class="logo">
+        <span class="site-name">Bean Boutique</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="coffeeselection.html">Coffee Selection</a>
+          <ul>
+            <li><a href="frenchpress.html">French Press</a></li>
+            <li><a href="Latte.html">Latte</a></li>
+            <li><a href="Americano.html">Americano</a></li>
+          </ul>
+        </li>
+        <li><a href="brewing.html">Brewing Equipment</a></li>
+        <li><a href="events.html">Events & Workshops</a></li>
+        <li><a href="cart.html">Shopping Cart <span class="cart-count">0</span></a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Americano Selection</h1>
+    <div class="coffee-list">
+      <div class="coffee-item">
+        <!-- Capital A in the image path -->
+        <img src="image/Americano/Hot-Americano.jpg" alt="Hot Americano">
+        <h2>Hot Americano</h2>
+        <p>Tasting Notes: Bold, smooth, slightly bitter with subtle acidity.</p>
+        <p>How to make: Pull 1–2 shots of espresso, then pour hot water (120–180ml) over it.</p>
+        <p>$4.50</p>
+        <button class="add-to-cart" data-name="Hot Americano" data-price="4.50">Add to Cart</button>
+      </div>
+      <div class="coffee-item">
+        <img src="image/Americano/Iced-Americano.jpg" alt="Iced Americano">
+        <h2>Iced Americano</h2>
+        <p>Tasting Notes: Refreshing, crisp acidity</p>
+        <p>How to make: Pour espresso over ice and cold water.</p>
+        <p>$4.50</p>
+        <button class="add-to-cart" data-name="Iced Americano" data-price="4.50">Add to Cart</button>
+      </div>
+      <div class="coffee-item">
+        <img src="image/Americano/long-black-americano.jpg" alt="Long Black Americano">
+        <h2>Long Black Americano</h2>
+        <p>Tasting Notes: Rich crema, stronger flavor</p>
+        <p>How to make: Pour espresso over hot water.</p>
+        <p>$4.50</p>
+        <button class="add-to-cart" data-name="Long Black Americano" data-price="4.50">Add to Cart</button>
+      </div>
+      <div class="coffee-item">
+        <img src="image/Americano/Sparkling-Americano.jpg" alt="Sparkling Americano">
+        <h2>Sparkling Americano</h2>
+        <p>Tasting Notes: Bubbly, citrusy, refreshing</p>
+        <p>How to make: Espresso + sparkling water + optional lemon/orange peel.</p>
+        <p>$4.50</p>
+        <button class="add-to-cart" data-name="Sparkling Americano" data-price="4.50">Add to Cart</button>
+      </div>
+      <div class="coffee-item">
+        <img src="image/Americano/White-Americano.jpg" alt="White Americano">
+        <h2>White Americano</h2>
+        <p>Tasting Notes: Creamy, soft bitterness</p>
+        <p>How to make: Hot Americano + splash of milk or cream.</p>
+        <p>$4.50</p>
+        <button class="add-to-cart" data-name="White Americano" data-price="4.50">Add to Cart</button>
+      </div>
+      <div class="coffee-item">
+        <img src="image/Americano/Honey-Americano.webp" alt="Honey Americano">
+        <h2>Honey Americano</h2>
+        <p>Tasting Notes: Slightly sweet, earthy</p>
+        <p>How to make: Hot Americano + 1–2 tsp honey stirred in.</p>
+        <p>$4.50</p>
+        <button class="add-to-cart" data-name="Honey Americano" data-price="4.50">Add to Cart</button>
+      </div>
+      <a href="cart.html" class="view-cart">View Cart</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+  </footer>
+  <script src="cart.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

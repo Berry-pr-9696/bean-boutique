@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean Boutique - French Press</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link
+      rel="shortcut icon"
+      href="image/Logo/favicon(white).png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-container">
+          <img src="image/Logo/favicon(white).png" alt="Logo" class="logo" />
+          <span class="site-name">Bean Boutique</span>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="coffeeselection.html">Coffee Selection</a>
+            <ul>
+              <li><a href="frenchpress.html">☕ French Press</a></li>
+              <li><a href="Latte.html">☕ Latte</a></li>
+              <li><a href="Americano.html">☕ Americano</a></li>
+            </ul>
+          </li>
+          <li><a href="brewing.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li>
+            <a href="cart.html"
+              >Shopping Cart <span class="cart-count">0</span></a
+            >
+          </li>
+          <li><a href="offers.html">Special Offers</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <h1>French Press Selection</h1>
+      <div class="coffee-list">
+        <div class="coffee-item">
+          <img
+            src="image/French-press/Classic-french-press-coffee.jpg"
+            alt="Classic French Press Coffee"
+          />
+          <h2>Classic French Press Coffee</h2>
+          <p>
+            Tasting Notes: Full-bodied, rich, robust flavor with natural oils
+          </p>
+          <p>
+            How to make: Use coarse grind, steep in hot water for 4 minutes,
+            then press the plunger.
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="Classic French Press Coffee"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img
+            src="image/French-press/French-press-latte.jpg"
+            alt="French Press latte"
+          />
+          <h2>French Press Latte</h2>
+          <p>Tasting Notes: Creamy, mellow, smooth coffee flavor</p>
+          <p>
+            How to make: Brew strong coffee in French press, then add hot or
+            steamed milk (1:1 ratio).
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="French Press Latte"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img
+            src="image/French-press/french-press-cold-brew.webp"
+            alt="French Press Cold Brew"
+          />
+          <h2>French Press Cold Brew</h2>
+          <p>Tasting Notes: Smooth, mellow, low-acid</p>
+          <p>
+            How to make: Add coarse grounds and cold water. Steep for 12–18
+            hours in the fridge. Press and serve over ice.
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="French Press Cold Brew"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img
+            src="image/French-press/french-press-iced-coffee.jpg"
+            alt="French Press Iced Coffee"
+          />
+          <h2>French Press Iced Coffee</h2>
+          <p>Tasting Notes: Refreshing, bold, slightly diluted</p>
+          <p>
+            How to make: Brew hot coffee, cool it, and pour over ice. Optionally
+            add sugar or milk.
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="French Press Iced Coffee"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img
+            src="image/French-press/French-Press-Mocha.webp"
+            alt="French Press Mocha"
+          />
+          <h2>French Press Mocha</h2>
+          <p>Tasting Notes: Chocolatey, rich, slightly sweet</p>
+          <p>
+            How to make: Brew coffee, mix in cocoa powder or syrup, and top with
+            milk or cream.
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="French Press Mocha"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="coffee-item">
+          <img
+            src="image/French-press/French-Press-Affogato.jpg"
+            alt="French Press Affogato"
+          />
+          <h2>French Press Affogato</h2>
+          <p>Tasting Notes: Sweet, bold, dessert-like</p>
+          <p>
+            How to make: Brew strong coffee, pour hot over a scoop of vanilla
+            ice cream. Serve immediately.
+          </p>
+          <p>$4.50</p>
+          <button
+            class="add-to-cart"
+            data-name="French Press Affogato"
+            data-price="4.50"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <a href="cart.html" class="view-cart">View Cart</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+    </footer>
+    <div class="gradient-circle-background"></div>
+    <script src="cart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

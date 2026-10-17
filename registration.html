@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Bean Boutique</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link
+      rel="shortcut icon"
+      href="image/Logo/favicon(white).png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-container">
+          <img src="image/Logo/favicon(white).png" alt="Logo" class="logo" />
+          <span class="site-name">Bean Boutique</span>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="coffeeselection.html">Coffee Selection</a>
+            <ul>
+              <li><a href="frenchpress.html">French Press</a></li>
+              <li><a href="Latte.html">Latte</a></li>
+              <li><a href="Americano.html">Americano</a></li>
+            </ul>
+          </li>
+          <li><a href="brewing.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li>
+            <a href="cart.html"
+              >Shopping Cart <span class="cart-count">0</span></a
+            >
+          </li>
+          <li><a href="offers.html">Special Offers</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="registration-wrapper">
+      <div class="form-card">
+        <!-- Back Button -->
+        <a href="events.html" class="back-link">← Back to Events</a>
+
+        <h2>Register for Event</h2>
+        <p class="form-subtitle">
+          Fill out the form below to secure your spot.
+        </p>
+
+        <form
+          action="submit_form.php"
+          method="POST"
+          onsubmit="
+            event.preventDefault();
+            alert('Registration submitted successfully!');
+            window.location.href = 'events.html';
+          "
+        >
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="event">Select Event</label>
+            <select id="event" name="event" required>
+              <option value="" disabled selected>-- Choose an event --</option>
+              <option value="coffee_tasting">Coffee Tasting Session</option>
+              <option value="brewing_masterclass">Brewing Masterclass</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Notes (Optional)</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Any dietary restrictions or special requests?"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            Submit Registration
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
